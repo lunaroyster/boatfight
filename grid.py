@@ -1,23 +1,20 @@
-class grid(object):
-    """docstring for grid"""
+class Grid(object):
+    
     def __init__(self, w, h):
-        super(grid, self).__init__()
+        super(Grid, self).__init__()
         self.w = w
         self.h = h
-        # Cell = [[0 for x in range(w)] for y in range(h)]
-        self.Cell = [[0 for x in range(w)] for x in range(h)]
+        self.cell = [[0 for x in range(w)] for x in range(h)]
         for i in range(h):
             for j in range(w):
-                self.Cell[i][j] = cell()
-        print(self.Cell)
+                self.cell[i][j] = Cell()
+        print(self.cell)
 
-class cell(object):
+class Cell(object):
     """docstring for cell"""
 
-
-
     def __init__(self):
-        super(cell, self).__init__()
+        super(Cell, self).__init__()
 
         self.color = 'def'
         self.occupied = False
